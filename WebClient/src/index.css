@@ -1,11 +1,6 @@
 html, body {
   margin: 0;
   padding: 0;
-  display: block;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  background: #E4DEC0; /* Old browsers */
   background-color: #E4DEC0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',

@@ -1,6 +1,8 @@
 const color = {
     beige: '#E4DEC0',
-    leafy: '#226D28'
+    leafy: '#226D28',
+    lightleafy: '#37ae41',
+    darkleafy: '#1f6124'
 };
 
 const fontSize = {
@@ -56,6 +58,7 @@ const padding = {
 };
 
 const fontFamily = {
+    din: 'd-dinregular',
     righalftone: 'rig_solidbold_halftone',
     opensanslight: 'open_sanslight',
     opensansregular: 'open_sansregular'
