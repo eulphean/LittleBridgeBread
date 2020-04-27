@@ -22,7 +22,7 @@ const fontSize = {
     veryEnormous: '60px',
     extraEnormous: '64px',
     insane: '68px',
-    veryInstane: '72px',
+    veryInsane: '72px',
     extraInsane: '76px',
     gaia: '80px',
     veryGaia: '84px',

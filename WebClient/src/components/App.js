@@ -12,24 +12,98 @@ const styles = {
     margin: padding.small,
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'center'
+    alignItems: 'center',
+
+    '@media (min-width: 600px)': {  
+      paddingLeft: padding.verybig,
+      paddingRight: padding.veryBig
+    },
+
+    '@media (min-width: 750px)': {  
+      paddingLeft: padding.huge,
+      paddingRight: padding.huge
+    },
+
+    '@media (min-width: 900px)': {
+      marginTop: padding.huge,
+      paddingLeft: padding.veryMassive,
+      paddingRight: padding.veryMassive
+    },
+
+    '@media (min-width: 1200px)' : {
+      marginTop: padding.veryHuge,
+      paddingLeft: padding.extraMassive,
+      paddingRight: padding.extraMassive
+    },
+
+    '@media (min-width: 1400px)' : {
+      paddingLeft: padding.enormous,
+      paddingRight: padding.enormous
+    },
+
+    '@media (min-width: 1700px)' : {
+      paddingLeft: padding.extraInsane,
+      paddingRight: padding.extraInsane
+    }
   },
 
-  logoContainer: {
+  topLogoContainer: {
     display: 'flex',
     justifyContent: 'center',
-    alignSelf: 'center'
+    alignSelf: 'center',
+    height: fontSize.extraGaia, 
+    '@media (min-width: 600px)': {    
+      height: '100px'
+    },
+
+    '@media (min-width: 750px)': {  
+      height: '108px'
+    },
+    '@media (min-width: 900px)': {  
+      height: '120px'
+    },
+    '@media (min-width: 1200px)': {  
+      height: '140px'
+    },
+    '@media (min-width: 1400px)': {  
+      height: '180px'
+    }
   },
 
   topLogo: {
-    width: fontSize.extraGaia,
-    height: fontSize.extraGaia
+    width: '100%',
+    height: '100%'
+  },
+
+  bottomLogoContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignSelf: 'center',
+    marginTop: padding.veryBig,
+    marginBottom: padding.big,
+    height: fontSize.enormous,
+        
+    '@media (min-width: 600px)': {    
+      height: fontSize.extraEnormous
+    },
+
+    '@media (min-width: 750px)': {  
+      height: fontSize.insane
+    },
+    '@media (min-width: 900px)': {  
+      height: fontSize.veryInsane
+    },
+    '@media (min-width: 1200px)': {  
+      height: fontSize.veryGaia
+    },
+    '@media (min-width: 1400px)': {  
+      height: '92px'
+    }
   },
 
   bottomLogo: {
-    marginTop: padding.small,
-    width: fontSize.enormous,
-    height: fontSize.enormous
+    width: '100%',
+    height: '100%'
   }
 };
 
@@ -44,13 +118,13 @@ class App extends React.Component {
     return (
       <div style={styles.container}>
         <div style={styles.title}>
-          <div style={styles.logoContainer}>
+          <div style={styles.topLogoContainer}>
             <RoundLogo style={styles.topLogo} />
           </div>
           <About />
           <Menu />
           <Contact />
-          <div style={styles.logoContainer}>
+          <div style={styles.bottomLogoContainer}>
             <FlatLogo style={styles.bottomLogo} />
           </div>
         </div>

@@ -7,7 +7,20 @@ const styles = {
         fontFamily: fontFamily.righalftone,
         color: color.leafy,
         letterSpacing: '1.5px',
-        fontSize: fontSize.huge
+        fontSize: fontSize.huge,
+
+        '@media (min-width: 600px)': {  
+            fontSize: fontSize.veryHuge
+        },
+
+        '@media (min-width: 900px)': {  
+            // no change.
+            fontSize: fontSize.enormous,
+        },
+
+        '@media (min-width: 1400px)' : {
+            fontSize: fontSize.veryEnormous,
+        }
     }
 };
 

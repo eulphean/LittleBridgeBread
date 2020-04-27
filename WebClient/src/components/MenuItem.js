@@ -8,8 +8,11 @@ const styles = {
     container: {
         display: 'flex',
         flexDirection: 'column',
-        alignSelf: 'center',
-        alignItems: 'center'
+        margin: padding.extraSmall,
+        marginTop: padding.verySmall,
+        marginBottom: padding.small,
+        width: '100%',
+        height: '100%'
     },
 
     titleContainer: {
@@ -21,10 +24,27 @@ const styles = {
     },
 
     svgContainer: {
-        width: fontSize.verySmall, 
-        height: fontSize.verySmall,
         display: 'flex',
-        alignItems: 'center'
+        alignItems: 'flex-start',
+        width: fontSize.verySmall,
+        height: fontSize.verySmall, 
+        display: 'flex',
+
+        '@media (min-width: 600px)': {  
+            width: fontSize.small,
+            height: fontSize.small, 
+        },
+
+        '@media (min-width: 900px)': {  
+            // // no change.
+            width: fontSize.veryBig,
+            height: fontSize.veryBig, 
+        },
+        '@media (min-width: 1200px)': {  
+        //   // no change.
+            width: fontSize.veryHuge,
+            height: fontSize.veryHuge
+        }
     },
 
     svg: {
@@ -37,7 +57,20 @@ const styles = {
         fontFamily: fontFamily.opensansregular,
         fontSize: fontSize.small,
         color: color.leafy,
-        letterSpacing: '1px'
+        letterSpacing: '1px',
+
+        '@media (min-width: 600px)': {  
+            fontSize: fontSize.big
+        },
+
+        '@media (min-width: 900px)': {  
+            // no change.
+            fontSize: fontSize.veryBig,
+        },
+        '@media (min-width: 1200px)': {  
+          // no change.
+          fontSize: fontSize.huge,
+        }
     },
 
     priceFont: {
@@ -68,8 +101,21 @@ const styles = {
         fontFamily: fontFamily.opensanslight,
         fontSize: fontSize.verySmall,
         color: color.leafy, 
-        letterSpacing: '1px',
-        textAlign: 'center'
+        letterSpacing: '0.5px',
+        textAlign: 'center',
+
+        '@media (min-width: 600px)': {  
+            fontSize: fontSize.small
+        },
+
+        '@media (min-width: 900px)': {  
+            // no change.
+            fontSize: fontSize.big,
+        },
+        '@media (min-width: 1200px)': {  
+          // no change.
+          fontSize: fontSize.veryBig,
+        }
     }
 };
 
@@ -83,7 +129,7 @@ class MenuItem extends React.Component {
   }
 
   render() {
-    let containerStyle = this.props.topMargin ? [styles.container, styles.topSpacing] : styles.container;  
+    let containerStyle = this.props.topMargin ? [styles.container] : styles.container;  
     let priceStyle = [styles.title, styles.priceFont]; 
     return (
       <div style={containerStyle}>
@@ -108,7 +154,3 @@ class MenuItem extends React.Component {
 }
 
 export default Radium(MenuItem);
-
-// Title 
-
-// Image

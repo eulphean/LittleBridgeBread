@@ -18,7 +18,20 @@ const styles = {
         alignItems: 'center',
         color: color.leafy,
         fontFamily: fontFamily.opensansregular,
-        fontSize: fontSize.verySmall
+        fontSize: fontSize.verySmall,
+
+        '@media (min-width: 600px)': {  
+          fontSize: fontSize.small
+      },
+
+      '@media (min-width: 900px)': {  
+          // no change.
+          fontSize: fontSize.big,
+      },
+      '@media (min-width: 1200px)': {  
+        // no change.
+        fontSize: fontSize.veryBig,
+      }
     }
 };
 

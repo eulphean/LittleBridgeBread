@@ -14,7 +14,15 @@ const styles = {
         alignSelf: 'center',
         alignItems: 'center',
         marginTop: padding.small
-    }
+    },
+
+    items: {
+        display: 'flex',
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
 };
 
 const sdough="bread flour, water, whole wheat flour, whole rye flour, cracked wheat berries, salt";
@@ -34,9 +42,11 @@ class Menu extends React.Component {
     return (
       <div style={styles.container}>
         <Title>MENU</Title>
-        <MenuItem img={sourdough} title={'Country Sourdough'} price={'$10'} ingredients={sdough} />
-        <MenuItem img={rye} topMargin={true} title={'Sunflower Rye'} price={'$12'} ingredients={ry} />
-        <MenuItem img={bird} topMargin={true} title={'"BIRD" Bread'} price={'$12'} ingredients={brd} />
+        <div style={styles.items}>
+            <MenuItem key={'A'} img={sourdough} title={'Country Sourdough'} price={'$10'} ingredients={sdough} />
+            <MenuItem key={'B'} img={rye} topMargin={true} title={'Sunflower Rye'} price={'$12'} ingredients={ry} />
+            <MenuItem key={'C'} img={bird} topMargin={true} title={'"BIRD" Bread'} price={'$12'} ingredients={brd} />
+        </div>
       </div>
     );
   }
