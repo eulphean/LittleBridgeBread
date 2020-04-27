@@ -3,7 +3,6 @@ import Radium from 'radium'
 import Title from './Title.js'
 import { ReactComponent as Leaf } from './leaf.svg'
 import { color, fontFamily, fontSize, padding } from './CommonStyles.js';
-import sourdough from './sourdough.jpg'
 
 const styles = {
     container: {
@@ -99,7 +98,7 @@ class MenuItem extends React.Component {
                 {this.props.price}
             </div>
         </div>
-        <img style={styles.img} src={sourdough} alt='Sourdough' />
+        <img style={styles.img} src={this.props.img} alt={this.props.title} />
         <div style={styles.ingredients}>
             {this.props.ingredients}
         </div>
