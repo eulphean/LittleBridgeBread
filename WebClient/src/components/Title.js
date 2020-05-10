@@ -1,6 +1,6 @@
 import React from 'react'
 import Radium from 'radium'
-import { color, fontFamily, fontSize, padding } from './CommonStyles';
+import { color, fontFamily, fontSize } from './CommonStyles';
 
 const styles = {
     title: {

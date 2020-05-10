@@ -1,6 +1,5 @@
 import React from 'react'
 import Radium from 'radium'
-import Title from './Title.js'
 import { ReactComponent as Leaf } from './leaf.svg'
 import { color, fontFamily, fontSize, padding } from './CommonStyles.js';
 
@@ -20,7 +19,7 @@ const styles = {
         flexDirection: 'row',
         alignItems: 'center',
         width: '100%',
-        justifyContent: 'space-between'
+        justifyContent: 'center'
     },
 
     svgContainer: {
@@ -28,7 +27,6 @@ const styles = {
         alignItems: 'flex-start',
         width: fontSize.verySmall,
         height: fontSize.verySmall, 
-        display: 'flex',
 
         '@media (min-width: 600px)': {  
             width: fontSize.small,
@@ -58,6 +56,7 @@ const styles = {
         fontSize: fontSize.small,
         color: color.leafy,
         letterSpacing: '1px',
+        marginLeft: padding.big, 
 
         '@media (min-width: 600px)': {  
             fontSize: fontSize.big

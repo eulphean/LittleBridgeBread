@@ -49,7 +49,7 @@ class Contact extends React.Component {
       <div style={styles.container}>
         <Title>CONTACT</Title>
         <div style={styles.list}>
-            <a>MATTPONTARELLI@GMAIL.COM</a>
+            <div>MATTPONTARELLI@GMAIL.COM</div>
             <a 
                 target='_blank' 
                 rel="noopener noreferrer" 

@@ -1,7 +1,7 @@
 import React from 'react'
 import Radium from 'radium'
 import Title from './Title.js'
-import { color, fontFamily, fontSize, padding } from './CommonStyles.js';
+import { padding } from './CommonStyles.js';
 import MenuItem from './MenuItem.js'
 import sourdough from './sourdough.jpg'
 import rye from './rye.jpg'
@@ -45,7 +45,7 @@ class Menu extends React.Component {
         <div style={styles.items}>
             <MenuItem key={'A'} img={sourdough} title={'Country Sourdough'} price={'$10'} ingredients={sdough} />
             <MenuItem key={'B'} img={rye} topMargin={true} title={'Sunflower Rye'} price={'$12'} ingredients={ry} />
-            <MenuItem key={'C'} img={bird} topMargin={true} title={'"BIRD" Bread'} price={'$12'} ingredients={brd} />
+            <MenuItem key={'C'} img={bird} topMargin={true} title={'"BIRD" Bread (Gluten Free)'} price={'$15'} ingredients={brd} />
         </div>
       </div>
     );

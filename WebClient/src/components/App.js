@@ -1,6 +1,6 @@
 import React from 'react'
 import Radium from 'radium'
-import { color, fontFamily, fontSize, padding } from './CommonStyles';
+import { fontSize, padding } from './CommonStyles';
 import { ReactComponent as RoundLogo } from './roundlogo.svg'
 import { ReactComponent as FlatLogo } from './flatlogo.svg'
 import About from './About.js'
