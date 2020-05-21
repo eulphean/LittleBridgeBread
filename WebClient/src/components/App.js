@@ -1,6 +1,6 @@
 import React from 'react'
 import Radium from 'radium'
-import { fontSize, padding } from './CommonStyles';
+import { fontSize, padding, fontFamily, color } from './CommonStyles';
 import { ReactComponent as RoundLogo } from './roundlogo.svg'
 import { ReactComponent as FlatLogo } from './flatlogo.svg'
 import About from './About.js'
@@ -104,6 +104,21 @@ const styles = {
   bottomLogo: {
     width: '100%',
     height: '100%'
+  },
+
+  footer: {
+    fontFamily: fontFamily.opensanslight,
+    fontSize: fontSize.small,
+    color: color.leafy,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+
+  link: {
+    color: color.link,
+    paddingLeft: padding.extraSmall,
+    fontWeight: 'bold'
   }
 };
 
@@ -127,6 +142,7 @@ class App extends React.Component {
           <div style={styles.bottomLogoContainer}>
             <FlatLogo style={styles.bottomLogo} />
           </div>
+          <div style={styles.footer}>{"2020 © Matt Pontarelli, Developed by "}<span><a style={styles.link}  target='_blank' rel="noopener noreferrer" href="https://amaykataria.com">Amay Kataria</a></span></div>
         </div>
       </div>
     );

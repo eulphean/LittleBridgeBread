@@ -2,7 +2,8 @@ const color = {
     beige: '#E4DEC0',
     leafy: '#226D28',
     lightleafy: '#37ae41',
-    darkleafy: '#1f6124'
+    darkleafy: '#1f6124',
+    link: 'rgb(103,52,31)'
 };
 
 const fontSize = {
