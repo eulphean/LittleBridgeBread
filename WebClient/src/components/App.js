@@ -108,7 +108,7 @@ const styles = {
 
   footer: {
     fontFamily: fontFamily.opensanslight,
-    fontSize: fontSize.small,
+    fontSize: fontSize.verySmall,
     color: color.leafy,
     display: 'flex',
     alignItems: 'center',

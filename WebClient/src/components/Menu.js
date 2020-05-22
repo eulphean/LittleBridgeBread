@@ -25,9 +25,9 @@ const styles = {
     },
 };
 
-const sdough="bread flour, water, whole wheat flour, whole rye flour, cracked wheat berries, salt";
-const ry="whole rye flour, water, whole wheat flour, sunflower seeds, salt";
-const brd="rolled oats, water, pumpkin seeds, sunflower seeds, buckwheat, flax seeds, olive oil, maple syrup, oat flour, psyllium husk, salt";
+const sdough="bread flour, water, whole wheat flour, whole rye flour, cracked rye berries, salt";
+const ry="whole rye flour, water, whole wheat flour, sunflower seeds, cracked rye berries, salt";
+const brd="rolled oats, water, pumpkin seeds, sunflower seeds, sesame seeds, flax seeds, olive oil, maple syrup, oat flour, psyllium husk, salt";
 
 
 class Menu extends React.Component {
